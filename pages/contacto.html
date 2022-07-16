@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+    <title>Inicio | Información Parques Nacionales | Argentina</title>
+</head>
+
+<body>
+    <header>
+        <!--  inicio navbar-->
+        <nav class="fondo">
+            <ul class="menuSuperior">
+                <li><a href="../index.html">Home</a></li>
+                <li> <a href="parque-glaciares.html">Parque Los Glaciares</a></li>
+                <li><a href="ecorregiones.html">Ecorregiones</a></li>
+                <li><a href="cartografia.html">Cartografía</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!--  fin navbar-->
+
+
+    </header>
+
+    <main>
+        <section>
+            <form action="">
+                <fieldset>
+                    <legend>Realice su consulta</legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+                    <br>
+                    <br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required>
+                    <br>
+                    <br>
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" name="correo" id="correo" placeholder="Ingresa tu mail" required>
+
+                    <br>
+                    <br>
+
+
+                    <!--Checkbox-->
+
+                    <label for="pais">Pais de residencia</label>
+                    <br>
+                    <input type="radio" name="pais">Argentina
+                    <input type="radio" name="pais">Chile
+                    <input type="radio" name="pais">Uruguay
+
+                    <br>
+
+                    <!-- Textarea -->
+                    <br>
+                    <br>
+
+                    <label for="comentario">Dejanos tu comentario</label>
+                    <br>
+                    <br>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" maxlength="190" minlength="10"></textarea>
+
+
+                    <br>
+                    <br>
+                    <input type="submit" value="Envia el formulario">
+                    <input type="reset" value="Limpiar formulario">
+
+
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!--  inicio footer -->
+
+    <footer class="fondo footer">
+        <div>
+            <h2>Contacto:</h2>
+            <p>Calle Falsa 123</p>
+        </div>
+
+        <div>
+            <ul class="menuInferior">
+                <li>
+                    <a href="">Facebook</a>
+                </li>
+                <li>
+                    <a href="">Instagram</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!--  fin footer -->
+
+</body>
+
+</html>
