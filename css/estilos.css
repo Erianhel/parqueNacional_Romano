@@ -171,6 +171,16 @@ footer {
     object-fit: contain;
 }
 
+.zoom {
+    transform: scale(1);
+    transition: all 500ms ease-in-out;
+}
+
+.zoom:hover {
+    transform: scale(0.8);
+    border-radius: 10px;
+}
+
 
                         /* Medias */
 
