@@ -5,25 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+     <!-- Estilos de autor -->
+     <link rel="stylesheet" href="../css/estilos.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+     <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+ 
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+     <!--    fontawesome-->
+     <link rel="stylesheet" href="../fontawesome/css/all.min.css">
     <title>Cartografia | Información Parques Nacionales | Argentina</title>
 </head>
 
 <body>
     <header>
         <!--  inicio navbar-->
-        <nav class="fondo">
-            <ul class="menuSuperior">
-                <li><a href="../index.html">Home</a></li>
-                <li> <a href="parque-glaciares.html">Parque Los Glaciares</a></li>
-                <li><a href="ecorregiones.html">Ecorregiones</a></li>
-                <li><a href="cartografia.html">Cartografía</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark fondo">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="../img/logo.png" width="65" height="60" alt="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-auto borde">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html"><img src="../img/home.png" alt="icono parques"> Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="parque-glaciares.html"><img src="../img/green.png" alt="icono parques"> Parque Los Glaciares</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="ecorregiones.html"><img src="../img/earth.png" alt="icono ecorregiones"> Ecorregiones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="cartografia.html"><img src="../img/map1.png" alt="icono cartografia"> Cartografía</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html"><img src="../img/contact.png" alt="icono contacto"> Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <!--  fin navbar-->
 
 
@@ -31,48 +58,72 @@
 
     <!--  inicio contenido principal-->
     <main>
-        <section>
+        <section class="container">
             <h1 class="titulos">Cartografía</h1>
             <p class="parrafos">
                 Cartografía con información sobre algunos parques nacionales.
             </p>
         </section>
 
-        <section>
-            <div class="galeria">
-                <div class="tamanio espacio">
-                    <img src="../img/glaciaresc.jpg" alt="parque glaciares" class="img-tamanio">
+        <section id="cartografia" class="container mb-5">
+            <div class="row justify-content-center mt-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card d-flex mx-auto mb-4 shadow" style="width: 18rem;">
+                        <img src="../img/glaciaresc.jpg" class="card-img-top" alt="Cartografía Parque Nacional Los Glaciares">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Parque Nacional Los Glaciares</h5>
+                            <p class="card-text">Información territorial y referencias del Parque Nacional Los Glaciares</p>
+                            <a href="../img/glaciaresc.jpg" target="_blank" class="btn btn-warning">Ampliar</a>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="tamanio espacio">
-                    <img src="../img/glaciares2.jpg" alt="parque y reserva nacional" class="img-tamanio">
+    
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card d-flex mx-auto mb-4 shadow" style="width: 18rem;">
+                        <img src="../img/glaciares2.jpg" class="card-img-top" alt="Cartografía Parque Nacional Los Glaciares">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Parque Nacional Los Glaciares</h5>
+                            <p class="card-text">Información territorial y referencias del Parque Nacional Los Glaciares</p>
+                            <a href="../img/glaciares2.jpg" target="_blank" class="btn btn-warning">Ampliar</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
     </main>
     <!--  fin contenido principal-->
 
     <!--  inicio footer -->
 
-    <footer class="fondo footer">
-        <div>
-            <h2>Contacto:</h2>
-            <p>Calle Falsa 123</p>
-        </div>
+    <footer class="fondo">
 
-        <div>
-            <ul class="menuInferior">
-                <li>
-                    <a href="">Facebook</a>
-                </li>
-                <li>
-                    <a href="">Instagram</a>
-                </li>
-            </ul>
-        </div>
+        <section class="container-fluid fondo-footer text-light">
+            <div class="row d-flex justify-content-around align-items-center">
+                <div class="col-12 col-lg-4 text-center">
+                    <h2 class="h4 m-3">Contacto</h2>
+                    <adress>
+                        Dirección: Calle Falsa 123<br>
+                        <i class="fab fa-whatsapp"></i> Teléfono: <span class="text-white">(011) 5847-4136</span><br>
+                        <i class="far fa-envelope"></i> Mail: sipn@sipn.com.ar<br>
+                    </adress>
+                </div>
+
+                <div class="col-12 col-lg-4 text-center">
+                    <ul class="m-5">
+                        <li class="d-inline iconos m-2 facebook p-1"><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square text-white"></i></a></li>
+                        <li class="d-inline iconos m-2 instagram p-1"><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram text-white"></i></a></li>
+                        <li class="d-inline iconos m-2 youtube p-1"><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square text-white"></i></a></li>
+                    </ul>
+                </div>
+            
+            </div>
+        </section>
+
     </footer>
     <!--  fin footer -->
 
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>

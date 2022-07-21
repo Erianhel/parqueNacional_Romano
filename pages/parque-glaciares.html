@@ -5,32 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+     <!-- Estilos de autor -->
+     <link rel="stylesheet" href="../css/estilos.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+     <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+ 
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+     <!--    fontawesome-->
+     <link rel="stylesheet" href="../fontawesome/css/all.min.css">
     <title>Parque Nacional Los Glaciares | Argentina</title>
 </head>
 
 <body>
     <header>
         <!--  inicio navbar-->
-        <nav class="fondo">
-            <ul class="menuSuperior">
-                <li><a href="../index.html">Home</a></li>
-                <li> <a href="parque-glaciares.html">Parque Los Glaciares</a></li>
-                <li><a href="ecorregiones.html">Ecorregiones</a></li>
-                <li><a href="cartografia.html">Cartografía</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    
+        <nav class="navbar navbar-expand-lg navbar-dark fondo">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="../img/logo.png" width="65" height="60" alt="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-auto borde">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html"><img src="../img/home.png" alt="icono parques"> Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="parque-glaciares.html"><img src="../img/green.png" alt="icono parques"> Parque Los Glaciares</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="ecorregiones.html"><img src="../img/earth.png" alt="icono ecorregiones"> Ecorregiones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cartografia.html"><img src="../img/map1.png" alt="icono cartografia"> Cartografía</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html"><img src="../img/contact.png" alt="icono contacto"> Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
         <!--  fin navbar-->
 
 
     </header>
 
     <main>
-        <section>
+        <section class="container mt-5">
             <!--  seccion -->
             <h1 class="titulos">Parque Nacional Los Glaciares</h1>
 
@@ -43,37 +72,39 @@
                 septiembre del año 1942, la Presidencia de la Nación, por Decreto Nº 129.433, amplió el margen costero de la Reserva sobre el Canal de los Témpanos y la costa Norte del Lago Rico.
             </p>
 
-            <div class="container alinear">
-                <div class="iframe">
-                    <iframe class="embed-responsive-item img-tamanio" src="https://www.youtube.com/embed/LlWuv_QarxY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="contenido-embebido">
+                <div class="col-12 col-md-12">
+                    <iframe width="560" height="315" class="embed-responsive-item" src="https://www.youtube.com/embed/LlWuv_QarxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
+
             </div>
         </section>
 
-        <section>
+        <section class="container mt-5">
             <h2 class="subtitulos">Biodiversidad</h2>
-            <p>
+            <p class="parrafos">
                 El Parque Nacional Los Glaciares se encuentra emplazado en la ecorregión de la Estepa Patagónica y los Bosques Patagónicos. Su nombre evoca la magnitud de los numerosos glaciares que contornean el paisaje de la cordillera austral. En sus lentos movimientos
                 estos gigantes ríos congelados, forman constantemente siluetas caprichosas que avanzan y retroceden. Incluso, algunas de ellas recuerdan puentes, diques y cavernas.
             </p>
 
             <h2 class="subtitulos">Clima</h2>
-            <p>
+            <p class="parrafos">
                 Templado a frío y húmedo. Las temperaturas medias van desde los 0,6° C en invierno y 13,4º C en verano, para las zonas más bajas (en las de mayor altura la temperatura media anual rondaría los -3° C). En promedio, hay desde 500 a 900 mm anuales de lluvia,
                 de este a oeste, distribuidos bastante homogéneamente a lo largo del año. Hay nevadas abundantes durante los meses más fríos y vientos más intensos en el verano.
             </p>
 
             <h2 class="subtitulos">Flora</h2>
-            <p>
+            <p class="parrafos">
                 En los bosques se destacan la lenga, el ñire y el guindo; hacia el este, a medida que se desciende de los cordones montañosos, comienzan a preponderar el notro y el calafate. Finalmente, se abre la estepa patagónica con sus característicos pastizales
                 y arbustos achaparrados y espinosos, como el coirón, neneo y mata guanaco, entre otros.
             </p>
 
-            <div class="galeria">
-                <div class="espacio">
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 text-center espacio">
                     <img src="../img/lenga-glaciares.jpg" alt="Parque Nacional Glaciares Flora">
                 </div>
-                <div class="espacio">
+                <div class="col-12 col-md-6 col-lg-4 text-center espacio">
                     <img src="../img/nire-glaciares.jpg" alt="Parque Nacional Glaciares Flora">
                 </div>
             </div>
@@ -101,26 +132,37 @@
 
     <!--  fin contenido principal-->
 
-    <!--  inicio footer -->
-
     <footer class="fondo">
-        <div>
-            <h2>Contacto:</h2>
-            <p>Calle Falsa 123</p>
-        </div>
 
-        <div>
-            <ul class="menuInferior">
-                <li>
-                    <a href="">Facebook</a>
-                </li>
-                <li>
-                    <a href="">Instagram</a>
-                </li>
-            </ul>
-        </div>
+        <section class="container-fluid fondo-footer text-light">
+            <div class="row d-flex justify-content-around align-items-center">
+                <div class="col-12 col-lg-4 text-center">
+                    <h2 class="h4 m-3">Contacto</h2>
+                    <adress>
+                        Dirección: Calle Falsa 123<br>
+                        <i class="fab fa-whatsapp"></i> Teléfono: <span class="text-white">(011) 5847-4136</span><br>
+                        <i class="far fa-envelope"></i> Mail: sipn@sipn.com.ar<br>
+                    </adress>
+                </div>
+
+                <div class="col-12 col-lg-4 text-center">
+                    <ul class="m-5">
+                        <li class="d-inline iconos m-2 facebook p-1"><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square text-white"></i></a></li>
+                        <li class="d-inline iconos m-2 instagram p-1"><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram text-white"></i></a></li>
+                        <li class="d-inline iconos m-2 youtube p-1"><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square text-white"></i></a></li>
+                    </ul>
+                </div>
+            
+            </div>
+        </section>
+
     </footer>
     <!--  fin footer -->
+
+    <!-- CDN Bootstrap -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>

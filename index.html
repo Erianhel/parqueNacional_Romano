@@ -5,43 +5,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Estilos de autor -->
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- CDN CSS Boostrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+ 
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-    <!-- Estilos de autor -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+    <!--    fontawesome-->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <title>Inicio | Información Parques Nacionales | Argentina</title>
 </head>
 
 <body>
 
-    <header>
+    <header class="container"> 
+
         <!--  inicio navbar-->
-        <nav class="fondo">
-            <ul class="menuSuperior">
-                <li><a href="index.html">Home</a></li>
-                <li> <a href="./pages/parque-glaciares.html">Parque Los Glaciares</a></li>
-                <li><a href="./pages/ecorregiones.html">Ecorregiones</a></li>
-                <li><a href="./pages/cartografia.html">Cartografía</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    
+        <nav class="navbar navbar-expand-lg navbar-dark fondo">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="./img/logo.png" width="65" height="60" alt="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-auto borde">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"><img src="./img/home.png" alt="icono parques"> Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/parque-glaciares.html"><img src="./img/green.png" alt="icono parques"> Parque Los Glaciares</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/ecorregiones.html"><img src="./img/earth.png" alt="icono ecorregiones"> Ecorregiones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/cartografia.html"><img src="./img/map1.png" alt="icono cartografia"> Cartografía</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html"><img src="./img/contact.png" alt="icono contacto"> Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
         <!--  fin navbar-->
 
-        <!--  imagen banner-->
-        <div class="container alinear">
-            <img src="img/glaciares-res.jpg" alt="imagen banner">
-        </div>
+        <!--  carousel banner-->        
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/glaciares-res.jpg" class="d-block w-100" alt="img carousel parque glaciares">
+                <div class="carousel-caption d-none d-md-block bg-dark opacidad">
+                  <h5>Parque Nacional Los Glaciares</h5>
+                  <p>Ubicado en el sudoeste de la provincia de Santa Cruz</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/glaciaresban2.jpg" class="d-block w-100" alt="img carousel parque glaciares">
+                <div class="carousel-caption d-none d-md-block bg-dark opacidad">
+                    <h5>Parque Nacional Los Glaciares</h5>
+                    <p>Ubicado en el sudoeste de la provincia de Santa Cruz</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/glaciaresban3.jpg" class="d-block w-100" alt="img carousel parque glaciares">
+                <div class="carousel-caption d-none d-md-block bg-dark opacidad">
+                    <h5>Parque Nacional Los Glaciares</h5>
+                    <p>Ubicado en el sudoeste de la provincia de Santa Cruz</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    
 
     </header>
 
     <main>
         <!--  inicio contenido principal-->
 
-        <section>
+        <section class="container mt-5">
             <h1 class="titulos">Parques Nacionales de Argentina</h1>
 
             <div class="parrafos">
@@ -54,48 +117,83 @@
         </section>
 
         <!--  Galeria de imagenes -->
+    
 
-        <h2 class="subtitulos">Galería de Imágenes de algunos de los Parques</h2>
+        <section class="container mt-5">
+            <h2 class="subtitulos">Galería de Imágenes de algunos de los Parques</h2>
 
-        <section>
-            <div class="gridGaleria">
-                <img src="img/lanin.jpg" alt="Parque Nacional Lanín" class="img1 zoom">
-                <img src="img/el-leoncito.jpg" alt="Parque Nacional El Leoncito" class="img2 zoom">
-                <img src="img/ibera.jpg" alt="Parque Nacional Ibera" class="img3 zoom">
-                <img src="img/imprenetrable.jpg" alt="Parque Nacional El Impenetrable" class="img4 zoom">
-                <img src="img/isla-pinguino.jpg" alt="Parque Isla Pinguino" class="img5 zoom">
-                <img src="img/nahuel-huapi.jpg" alt="Parque Nahuel Huapi" class="img6 zoom">
-            </div>
+                <div class="row pt-5">
+                    <div class="col-12 col-md-6 col-lg-4 pb-4 text-center">
+                        <img src="img/lanin.jpg" alt="Parque Nacional Lanín" class="img1 zoom">
+                        <p class="parrafos">Parque Nacional Lanín</p>
+                    </div>
+                
+                    <div class="col-12 col-md-6 col-lg-4 pb-4 text-center">
+                        <img src="img/el-leoncito.jpg" alt="Parque Nacional El Leoncito" class="img2 zoom">
+                        <p class="parrafos">Parque Nacional El Leoncito</p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 pb-4 text-center">
+                        <img src="img/ibera.jpg" alt="Parque Nacional Ibera" class="img3 zoom">
+                        <p class="parrafos">Parque Nacional Iberá</p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 pb-4 text-center">
+                        <img src="img/imprenetrable.jpg" alt="Parque Nacional El Impenetrable" class="img4 zoom">
+                        <p class="parrafos">Parque Nacional El Impenetrable</p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 pb-4 text-center">
+                        <img src="img/isla-pinguino.jpg" alt="Parque Isla Pinguino" class="img5 zoom">
+                        <p class="parrafos">Parque Interjuridisccional Isla Pinguino</p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 pb-4 text-center">
+                        <img src="img/nahuel-huapi.jpg" alt="Parque Nahuel Huapi" class="img6 zoom">
+                        <p class="parrafos">Parque Nacional Nahuel Huapi</p>
+                    </div>
+                </div>
         </section>
 
 
     </main>
     <!--  fin contenido principal-->
 
+
+
     <!--  inicio footer -->
 
     <footer class="fondo">
-        <div>
-            <h2>Contacto:</h2>
-            <p>Calle Falsa 123</p>
-        </div>
 
-        <div>
-            <ul class="menuInferior">
-                <li>
-                    <a href="">Facebook</a>
-                </li>
-                <li>
-                    <a href="">Instagram</a>
-                </li>
-            </ul>
-        </div>
+        <section class="container-fluid fondo-footer text-light">
+            <div class="row d-flex justify-content-around align-items-center">
+                <div class="col-12 col-lg-4 text-center">
+                    <h2 class="h4 m-3">Contacto</h2>
+                    <adress>
+                        Dirección: Calle Falsa 123<br>
+                        <i class="fab fa-whatsapp"></i> Teléfono: <span class="text-white">(011) 5847-4136</span><br>
+                        <i class="far fa-envelope"></i> Mail: sipn@sipn.com.ar<br>
+                    </adress>
+                </div>
+
+                <div class="col-12 col-lg-4 text-center">
+                    <ul class="m-5">
+                        <li class="d-inline iconos m-2 facebook p-1"><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square text-white"></i></a></li>
+                        <li class="d-inline iconos m-2 instagram p-1"><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram text-white"></i></a></li>
+                        <li class="d-inline iconos m-2 youtube p-1"><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square text-white"></i></a></li>
+                    </ul>
+                </div>
+            
+            </div>
+        </section>
+
     </footer>
     <!--  fin footer -->
 
 <!-- CDN Bootstrap -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>
