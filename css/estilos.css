@@ -96,15 +96,6 @@ body {
     margin-bottom: 15px;
 }
 
-.boton {
-    background-color: #fb8c00;
-    color: cornsilk;
-}
-
-.boton:hover {
-    background-color: #e65100;
-}
-
 .espacio {
     margin: 10px;
     padding: 10px;
@@ -160,6 +151,24 @@ footer {
     border: 0.0625rem solid transparent;
 }
 
+.zoomAcercar {
+    transform: scale(1);
+    transition: all 500ms ease-in-out;
+}
+
+.zoomAcercar:hover {
+    transform: scale(1.1);
+}
+
+.btn {
+    background-color: #fb8c00;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #e65100;
+}
+
 
 
 
@@ -169,6 +178,7 @@ footer {
     
 @media only screen and (min-width:768px) and (max-width:1200px){
 
+    
 
     .gridGaleria {
         display: grid;
