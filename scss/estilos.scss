@@ -1,0 +1,188 @@
+/* Importo el archivo que contiene las variables */
+
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+     /* Menú */ 
+
+nav {
+    padding: 15px;
+}
+
+.menuSuperior,
+.menuInferior {
+    list-style-type: none;
+    text-align: $texto-centrado;
+
+    li {
+        display: inline-block;
+        padding: 8px;
+    }
+
+    a {
+    text-decoration: none;
+    color: $color-white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    }
+}
+
+body {
+    font-family: $fuente-roboto;
+    font-weight: $fuente-weight;
+    background-color: #f5eada;
+}
+
+.fondo {
+    background-color: #689f38;
+}
+
+.alinear {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.iconos {
+    font-size: 1.75rem;
+}
+
+.facebook:hover {
+    background-color: #3b5998;
+}
+
+.instagram:hover {
+    background-color: #833ab4;
+}
+
+.youtube:hover {
+    background-color: #cd201f;
+}
+
+.titulos {
+    font-family: $fuente-roboto;
+    font-weight: 900;
+    text-align: $texto-centrado;
+    color: #23912a;
+    font-size: 2.5rem;
+    padding: 20px;
+    margin: 10px;
+}
+
+.parrafos {
+    font-family: $fuente-roboto;
+    font-weight: $fuente-weight;
+    text-align: $texto-centrado;
+}
+
+.subtitulos {
+    font-family: $fuente-roboto;
+    font-weight: $fuente-weight;
+    text-align: $texto-centrado;
+    color: #23912a;
+    font-size: 2.5rem;
+    padding: 20px;
+    margin: 10px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: $texto-centrado;
+    margin-bottom: 15px;
+}
+
+.espacio {
+    margin: 10px;
+    padding: 10px;
+}
+
+footer {
+    text-align: $texto-centrado;
+    color: $color-white;
+    padding: 15px;
+}
+
+.footer {
+     margin-top: 200px;
+}
+
+.contenido-embebido {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+     iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.zoom {
+    transform: scale(1);
+    transition: all 500ms ease-in-out;
+
+    &:hover {
+        transform: scale(0.8);
+        border-radius: 10px;
+    }
+}
+
+.opacidad {
+        opacity: 0.7;
+}
+
+.borde {
+    border: 0.0625rem solid transparent;
+}
+
+.zoomAcercar {
+    transform: scale(1);
+    transition: all 500ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+.btn {
+    background-color: #fb8c00;
+    color: $color-white;
+
+    &:hover {
+        background-color: #e65100;
+    }
+}
+
+
+
+
+
+
+                        /* Medias */
+
+    
+@media only screen and (min-width:768px) and (max-width:1200px){
+
+
+
+}
+    
+    
+@media only screen and (min-width:10px) and (max-width:767px){
+    
+   
+    
+    }     

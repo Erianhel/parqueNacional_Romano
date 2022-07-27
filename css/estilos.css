@@ -1,192 +1,135 @@
-
-
+@charset "UTF-8";
+/* Importo el archivo que contiene las variables */
+/* VARIABLES DE COLORES Y FUENTES */
+/* COLORES */
+/* FUENTES, SIZE, WEIGHT Y CENTRADO  */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-                        /* Menú */
+/* Menú */
 nav {
-    padding: 15px;
-}
+  padding: 15px; }
 
 .menuSuperior,
 .menuInferior {
-    list-style-type: none;
-    text-align: center;
-}
-
-.menuSuperior li,
-.menuInferior li {
+  list-style-type: none;
+  text-align: center; }
+  .menuSuperior li,
+  .menuInferior li {
     display: inline-block;
-    padding: 8px;
-}
-
-.menuSuperior a,
-.menuInferior a {
+    padding: 8px; }
+  .menuSuperior a,
+  .menuInferior a {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
-    font-weight: 600;
-}
+    font-weight: 600; }
 
 body {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    background-color: #f5eada;
-}
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background-color: #f5eada; }
 
 .fondo {
-    background-color: #689f38;
-}
+  background-color: #689f38; }
 
 .alinear {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .iconos {
-    font-size: 1.75rem;
-}
+  font-size: 1.75rem; }
 
 .facebook:hover {
-    background-color: #3b5998;
-}
+  background-color: #3b5998; }
 
 .instagram:hover {
-    background-color: #833ab4;
-}
+  background-color: #833ab4; }
 
 .youtube:hover {
-    background-color: #cd201f;
-}
+  background-color: #cd201f; }
 
 .titulos {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    text-align: center;
-    color: #23912a;
-    font-size: 2.5rem;
-    padding: 20px;
-    margin: 10px;
-}
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  color: #23912a;
+  font-size: 2.5rem;
+  padding: 20px;
+  margin: 10px; }
 
 .parrafos {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    text-align: center;
-}
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: center; }
 
 .subtitulos {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    text-align: center;
-    color: #23912a;
-    font-size: 2.5rem;
-    padding: 20px;
-    margin: 10px;
-}
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #23912a;
+  font-size: 2.5rem;
+  padding: 20px;
+  margin: 10px; }
 
 .galeria {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-}
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px; }
 
 .espacio {
-    margin: 10px;
-    padding: 10px;
-}
+  margin: 10px;
+  padding: 10px; }
 
 footer {
-    text-align: center;
-    color: white;
-    padding: 15px;
-}
+  text-align: center;
+  color: white;
+  padding: 15px; }
 
 .footer {
-    margin-top: 300px;
-}
+  margin-top: 200px; }
 
 .contenido-embebido {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-}
-
-.contenido-embebido iframe {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; }
+  .contenido-embebido iframe {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     right: 0;
     left: 0;
-    bottom: 0;
-}
+    bottom: 0; }
 
 .zoom {
-    transform: scale(1);
-    transition: all 500ms ease-in-out;
-}
-
-.zoom:hover {
+  transform: scale(1);
+  transition: all 500ms ease-in-out; }
+  .zoom:hover {
     transform: scale(0.8);
-    border-radius: 10px;
-}
-
-.fondo {
-    background-color: #689f38;
-    color: black;
-}
+    border-radius: 10px; }
 
 .opacidad {
-        opacity: 0.7;
-}
+  opacity: 0.7; }
 
 .borde {
-    border: 0.0625rem solid transparent;
-}
+  border: 0.0625rem solid transparent; }
 
 .zoomAcercar {
-    transform: scale(1);
-    transition: all 500ms ease-in-out;
-}
-
-.zoomAcercar:hover {
-    transform: scale(1.1);
-}
+  transform: scale(1);
+  transition: all 500ms ease-in-out; }
+  .zoomAcercar:hover {
+    transform: scale(1.1); }
 
 .btn {
-    background-color: #fb8c00;
-    color: white;
-}
+  background-color: #fb8c00;
+  color: white; }
+  .btn:hover {
+    background-color: #e65100; }
 
-.btn:hover {
-    background-color: #e65100;
-}
-
-
-
-
-
-                        /* Medias */
-
-    
-@media only screen and (min-width:768px) and (max-width:1200px){
-
-
-
-}
-    
-    
-@media only screen and (min-width:10px) and (max-width:767px){
-    
-   
-    
-    }     
-        
-    
+/* Medias */
