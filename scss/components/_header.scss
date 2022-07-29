@@ -1,0 +1,38 @@
+nav {
+    padding: 15px;
+}
+
+.menuSuperior,
+.menuInferior {
+    list-style-type: none;
+    text-align: $texto-centrado;
+
+    li {
+        display: inline-block;
+        padding: 8px;
+    }
+
+    a {
+    text-decoration: none;
+    color: $color-white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    }
+}
+
+.zoomAcercar {
+    transform: scale(1);
+    transition: all 500ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.opacidad {
+    opacity: 0.7;
+}
+
+.borde {
+border: 0.0625rem solid transparent;
+}

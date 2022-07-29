@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fuente-roboto;
+    font-weight: $fuente-weight;
+    background-color: #f5eada;
+}
+
+.fondo {
+    background-color: #689f38;
+}
+
+.alinear {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
